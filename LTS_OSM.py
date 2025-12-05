@@ -39,7 +39,7 @@ from lts_functions import (biking_permitted, is_separated_path, is_bike_lane, pa
 # ## Extract OSM tags to use in download
 
 # load the data
-f = open("htx.osm") # a larger bounding box for the city
+f = open("houston.osm") # a larger bounding box for the city
 data = json.load(f)
 
 # +
