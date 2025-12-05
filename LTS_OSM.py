@@ -39,7 +39,7 @@ from lts_functions import (biking_permitted, is_separated_path, is_bike_lane, pa
 # ## Extract OSM tags to use in download
 
 # load the data
-f = open("victoriaosm.osm") # a larger bounding box for the city
+f = open("htx.osm") # a larger bounding box for the city
 data = json.load(f)
 
 # +
@@ -75,8 +75,8 @@ ox.settings.osm_xml_way_tags = way_tags
 # keeping the footway and construction tags
 osmfilter = '["highway"]["area"!~"yes"]["access"!~"private"]["highway"!~"abandoned|bus_guideway|corridor|elevator|escalator|motor|planned|platform|proposed|raceway|steps"]["bicycle"!~"no"]["service"!~"private"]'
 
-city = "Victoria"
-province = "British Columbia"
+city = "Houston"
+province = "Texas"
 
 # check if data has already been downloaded; if not, download
 filepath = "data/%s.graphml" %city
